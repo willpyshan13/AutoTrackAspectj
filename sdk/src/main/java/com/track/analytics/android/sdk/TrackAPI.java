@@ -14,33 +14,33 @@ import java.util.Map;
 /**
  */
 @Keep
-public class SensorsDataAPI {
+public class TrackAPI {
     private final String TAG = this.getClass().getSimpleName();
     public static final String SDK_VERSION = "1.0.0";
-    private static SensorsDataAPI INSTANCE;
+    private static TrackAPI INSTANCE;
     private static final Object mLock = new Object();
     private static Map<String, Object> mDeviceInfo;
     private String mDeviceId;
 
     @Keep
     @SuppressWarnings("UnusedReturnValue")
-    public static SensorsDataAPI init(Application application) {
+    public static TrackAPI init(Application application) {
         synchronized (mLock) {
             if (null == INSTANCE) {
-                INSTANCE = new SensorsDataAPI(application);
+                INSTANCE = new TrackAPI(application);
             }
             return INSTANCE;
         }
     }
 
     @Keep
-    public static SensorsDataAPI getInstance() {
+    public static TrackAPI getInstance() {
         return INSTANCE;
     }
 
-    private SensorsDataAPI(Application application) {
-        mDeviceId = SensorsDataPrivate.getAndroidID(application.getApplicationContext());
-        mDeviceInfo = SensorsDataPrivate.getDeviceInfo(application.getApplicationContext());
+    private TrackAPI(Application application) {
+        mDeviceId = TrackPrivate.getAndroidID(application.getApplicationContext());
+        mDeviceInfo = TrackPrivate.getDeviceInfo(application.getApplicationContext());
     }
 
     /**
@@ -85,13 +85,13 @@ public class SensorsDataAPI {
             JSONObject sendProperties = new JSONObject(mDeviceInfo);
 
             if (properties != null) {
-                SensorsDataPrivate.mergeJSONObject(properties, sendProperties);
+                TrackPrivate.mergeJSONObject(properties, sendProperties);
             }
 
             jsonObject.put("properties", sendProperties);
             jsonObject.put("time", System.currentTimeMillis());
 
-            Log.i(TAG, SensorsDataPrivate.formatJson(jsonObject.toString()));
+            Log.i(TAG, TrackPrivate.formatJson(jsonObject.toString()));
         } catch (Exception e) {
             e.printStackTrace();
         }

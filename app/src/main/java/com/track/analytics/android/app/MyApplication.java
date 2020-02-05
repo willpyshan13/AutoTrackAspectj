@@ -2,7 +2,7 @@ package com.track.analytics.android.app;
 
 import android.app.Application;
 
-import com.track.analytics.android.sdk.SensorsDataAPI;
+import com.track.analytics.android.sdk.TrackAPI;
 
 /**
  */
@@ -20,6 +20,6 @@ public class MyApplication extends Application {
      * @param application Application
      */
     private void initSensorsDataAPI(Application application) {
-        SensorsDataAPI.init(application);
+        TrackAPI.init(application);
     }
 }

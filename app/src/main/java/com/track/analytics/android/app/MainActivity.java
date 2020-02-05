@@ -24,8 +24,8 @@ import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.track.analytics.android.sdk.SensorsDataAPI;
-import com.track.analytics.android.sdk.SensorsDataTrackViewOnClick;
+import com.track.analytics.android.sdk.TrackAPI;
+import com.track.analytics.android.sdk.TrackViewOnClick;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                     JSONObject p = new JSONObject();
                     if (!TextUtils.isEmpty(etSearch.getText())) {
                         p.put("searchKey", etSearch.getText().toString());
-                        SensorsDataAPI.getInstance().setViewProperties(button, p);
+                        TrackAPI.getInstance().setViewProperties(button, p);
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -225,7 +225,7 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param view View
      */
-    @SensorsDataTrackViewOnClick
+    @TrackViewOnClick
     public void xmlOnClick(View view) {
         showToast("XML OnClick");
     }

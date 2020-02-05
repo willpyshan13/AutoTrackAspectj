@@ -7,7 +7,7 @@ import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.tasks.compile.JavaCompile
 
-public class AutoTrackPlugin implements Plugin<Project> {
+class AutoTrackPlugin implements Plugin<Project> {
     void apply(Project project) {
         final def log = project.logger
 
@@ -28,8 +28,8 @@ public class AutoTrackPlugin implements Plugin<Project> {
                         "-classpath", javaCompile.classpath.asPath,
                         "-bootclasspath", project.android.bootClasspath.join(File.pathSeparator)
                 ]
-                MessageHandler handler = new MessageHandler(true);
-                new Main().run(args, handler);
+                MessageHandler handler = new MessageHandler(true)
+                new Main().run(args, handler)
 
                 println()
                 println("####################################################################")
@@ -48,16 +48,16 @@ public class AutoTrackPlugin implements Plugin<Project> {
                         case IMessage.ERROR:
                         case IMessage.FAIL:
                             log.error message.message, message.thrown
-                            break;
+                            break
                         case IMessage.WARNING:
                             log.warn message.message, message.thrown
-                            break;
+                            break
                         case IMessage.INFO:
                             log.info message.message, message.thrown
-                            break;
+                            break
                         case IMessage.DEBUG:
                             log.debug message.message, message.thrown
-                            break;
+                            break
                     }
                 }
             }
