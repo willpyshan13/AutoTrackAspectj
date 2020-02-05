@@ -1,4 +1,4 @@
-package com.sensorsdata.analytics.android.app;
+package com.track.analytics.android.app;
 
 import android.os.Bundle;
 import androidx.annotation.Nullable;

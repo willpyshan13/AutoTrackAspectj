@@ -5,7 +5,7 @@
 
         <variable
             name="handlers"
-            type="com.sensorsdata.analytics.android.app.MainActivity" />
+            type="com.track.analytics.android.app.MainActivity" />
     </data>
 
     <ScrollView xmlns:tools="http://schemas.android.com/tools"
@@ -112,7 +112,7 @@
 
             <fragment
                 android:id="@+id/testFragment"
-                android:name="com.sensorsdata.analytics.android.app.TestFragment"
+                android:name="com.track.analytics.android.app.TestFragment"
                 android:layout_width="match_parent"
                 android:layout_height="100dp" />
 

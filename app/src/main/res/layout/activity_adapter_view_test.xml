@@ -15,7 +15,7 @@
             android:textColor="@color/colorPrimary"
             android:text="ListView" />
 
-        <com.sensorsdata.analytics.android.app.FixedHeightListView
+        <com.track.analytics.android.app.FixedHeightListView
             android:id="@+id/listView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -27,7 +27,7 @@
             android:textColor="@color/colorPrimary"
             android:text="GridView" />
 
-        <com.sensorsdata.analytics.android.app.FixedHeightGridView
+        <com.track.analytics.android.app.FixedHeightGridView
             android:id="@+id/gridView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

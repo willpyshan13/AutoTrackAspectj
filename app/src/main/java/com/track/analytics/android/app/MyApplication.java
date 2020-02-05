@@ -1,8 +1,8 @@
-package com.sensorsdata.analytics.android.app;
+package com.track.analytics.android.app;
 
 import android.app.Application;
 
-import com.sensorsdata.analytics.android.sdk.SensorsDataAPI;
+import com.track.analytics.android.sdk.SensorsDataAPI;
 
 /**
  */

@@ -1,4 +1,4 @@
-package com.sensorsdata.analytics.android.sdk;
+package com.track.analytics.android.sdk;
 
 import android.app.Application;
 import androidx.annotation.Keep;

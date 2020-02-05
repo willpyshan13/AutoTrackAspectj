@@ -1,4 +1,4 @@
-package com.sensorsdata.analytics.android.sdk;
+package com.track.analytics.android.sdk;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

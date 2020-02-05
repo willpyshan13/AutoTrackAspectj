@@ -1,4 +1,4 @@
-package com.sensorsdata.analytics.android.app;
+package com.track.analytics.android.app;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -24,15 +24,15 @@ import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.sensorsdata.analytics.android.sdk.SensorsDataAPI;
-import com.sensorsdata.analytics.android.sdk.SensorsDataTrackViewOnClick;
+import com.track.analytics.android.sdk.SensorsDataAPI;
+import com.track.analytics.android.sdk.SensorsDataTrackViewOnClick;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import com.sensorsdata.analytics.android.app.databinding.ActivityMainBinding;
+import com.track.analytics.android.app.databinding.ActivityMainBinding;
 
 import org.json.JSONObject;
 

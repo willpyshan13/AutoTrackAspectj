@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.sensorsdata.analytics.android.app">
+    package="com.track.analytics.android.app">
 
     <application
-        android:name=".MyApplication"
+        android:name="com.track.analytics.android.app.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -14,7 +14,7 @@
         android:appComponentFactory="hhh"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity">
+            android:name="com.track.analytics.android.app.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,9 +22,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".AdapterViewTestActivity" />
+        <activity android:name="com.track.analytics.android.app.AdapterViewTestActivity" />
 
-        <activity android:name=".ExpandableListViewTestActivity" />
+        <activity android:name="com.track.analytics.android.app.ExpandableListViewTestActivity" />
 
     </application>
 
