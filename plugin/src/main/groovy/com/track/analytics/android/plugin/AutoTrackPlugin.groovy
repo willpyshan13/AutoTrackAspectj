@@ -1,4 +1,4 @@
-package com.sensorsdata.analytics.android.plugin
+package com.track.analytics.android.plugin
 
 import org.aspectj.bridge.IMessage
 import org.aspectj.bridge.MessageHandler
@@ -7,7 +7,7 @@ import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.tasks.compile.JavaCompile
 
-public class SensorsDataPlugin implements Plugin<Project> {
+public class AutoTrackPlugin implements Plugin<Project> {
     void apply(Project project) {
         final def log = project.logger
 

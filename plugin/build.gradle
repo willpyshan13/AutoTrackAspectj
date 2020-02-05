@@ -18,7 +18,7 @@ uploadArchives {
         repository(url: uri('../repo'))
 
         //groupId ，自行定义
-        pom.groupId = 'com.sensorsdata'
+        pom.groupId = 'com.track'
 
         //artifactId
         pom.artifactId = 'autotrack.android'

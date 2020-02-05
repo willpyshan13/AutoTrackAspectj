@@ -14,7 +14,7 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.3'
         classpath 'com.jakewharton:butterknife-gradle-plugin:10.2.1'
-        classpath 'com.sensorsdata:autotrack.android:1.0.0'
+        classpath 'com.track:autotrack.android:1.0.0'
     }
 }
 
