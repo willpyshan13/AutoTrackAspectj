@@ -9,7 +9,7 @@ android {
     }
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.sensorsdata.analytics.android.app.project5"
+        applicationId "com.track.analytics.android.app"
         minSdkVersion 15
         targetSdkVersion 28
         versionCode 1

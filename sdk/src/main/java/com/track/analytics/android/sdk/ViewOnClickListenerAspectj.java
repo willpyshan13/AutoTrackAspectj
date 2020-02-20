@@ -41,7 +41,7 @@ public class ViewOnClickListenerAspectj {
      *
      * @param joinPoint JoinPoint
      */
-    @After("execution(@com.sensorsdata.analytics.android.sdk.TrackViewOnClick * *(android.view.View))")
+    @After("execution(@com.track.analytics.android.sdk.TrackViewOnClick * *(android.view.View))")
     public void onTrackViewOnClickAOP(final JoinPoint joinPoint) {
         View view = (View) joinPoint.getArgs()[0];
         TrackPrivate.trackViewOnClick(view);
